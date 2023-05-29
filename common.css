@@ -139,6 +139,13 @@ body {
   background-color: #1d4ed8;
 }
 
+.email-change {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
 .secondary-button {
   padding: 1rem;
   padding-left: 2rem;
@@ -219,7 +226,6 @@ footer > p > a {
 
 .dashboard {
   display: flex;
-  flex-direction: column;
 }
 
 .dashboard > p {
@@ -256,4 +262,30 @@ footer > p > a {
 
 .home > p > a:hover {
   background-color: #ccc;
+}
+
+.dashboard > div > .standard-form  {
+  width: auto;
+  justify-self: flex-start;
+}
+
+.dashboard > div > .standard-form > input {
+  align-self: flex-start;
+} 
+
+.dashboard-forms {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.pref-update-form > .chbox-in-db {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem; 
+}
+
+.mt-1 {
+  margin-top: 1rem;
 }
