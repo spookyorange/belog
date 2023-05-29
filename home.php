@@ -13,6 +13,7 @@
 <body>
   <?php include './header.php'; ?>
   <div class="main-container home">
+    <p><a href="./create_post.php">Yeni bir gönderi oluştur</a></p>
     <?php
     // check if the user is logged in
     if (!isset($_COOKIE['user'])) {
@@ -24,7 +25,7 @@
     <?php
     // get the user's name
     $user = $_COOKIE['user'];
-    echo "<p>Hoşgeldin, $user <a href='admin_dashboard.php'>yönetici paneline gidebilir</a>, hesap ayarlarını yapabilir ve gönderi paylaşabilirsin</p>";
+    echo "<p><span>Hoşgeldin, $user <a href='admin_dashboard.php'>yönetici paneline gidebilir</a>, hesap ayarlarını yapabilir ve gönderi paylaşabilirsin</span></p>";
     ?>
     <p>
       Hoşgeldiniz, toplam

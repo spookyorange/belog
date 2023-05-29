@@ -38,8 +38,8 @@
 
 <body>
   <?php include('header.php'); ?>
-  <div class="main-container">
-    <p><a href="./create_post.php"><button>Yeni bir gönderi oluştur</button></a></p>
+  <div class="main-container dashboard">
+    <p><a href="./create_post.php">Yeni bir gönderi oluştur</a></p>
     <h1>Hesap Yönetimi</h1>
     <div>
       <h2>Email değiştir</h2>

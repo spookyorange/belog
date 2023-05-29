@@ -216,3 +216,44 @@ footer > p {
 footer > p > a {
   color: #c2410c;
 }
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard > p {
+  margin-bottom: 1rem;
+}
+
+.dashboard > p > a{
+  text-decoration: none;
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  color: #000;
+  font-weight: 500;
+}
+
+.home > p > a:hover {
+  background-color: #ccc;
+}
+
+.home > p {
+  margin-bottom: 1rem;
+}
+
+.home > p > a{
+  text-decoration: none;
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  color: #000;
+  font-weight: 500;
+}
+
+.home > p > a:hover {
+  background-color: #ccc;
+}
