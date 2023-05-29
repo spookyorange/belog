@@ -27,10 +27,12 @@
   ?>
   <style>
     body {
-      background: #<?php echo $pref_row['default_background_color_hex']; ?>;
+      background: #<?php echo $pref_row['default_background_color_hex']; ?>
     }
 
     .main-container {
+      margin-right: 2rem;
+      margin-bottom: 2rem;
       color: #<?php echo $pref_row['default_foreground_color_hex']; ?>;
       font-size: <?php echo $pref_row['default_font_size_rem']; ?>rem;
       font-weight: <?php if ($pref_row['default_font_bold'] == 1) {
@@ -44,10 +46,9 @@
                   } else {
                     echo 'normal';
                   };
-                  ?>;
-      margin-bottom: 2rem;
-      margin-right: 2rem;
+                  ?>
     }
+
     .post-container p {
       width: 100%;
       font-size: <?php echo $pref_row['default_font_size_rem']; ?>rem;
@@ -64,22 +65,22 @@
                   };
                   ?>;
     }
-    </style>
+  </style>
 </head>
 
 <body>
   <?php include './header.php'; ?>
   <div class="main-container ">
     <div class='post-container'>
-    <?php
+      <?php
 
 
-    echo "<h1>" . $row['title'] . "</h1>";
+      echo "<h1>" . $row['title'] . "</h1>";
 
-    echo "<p>" . $row['body'] . "</p>";
+      echo "<p>" . $row['body'] . "</p>";
 
 
-    ?>
+      ?>
     </div>
   </div>
   <?php include './footer.php'; ?>
