@@ -37,7 +37,7 @@ body {
   margin-top: 2rem;
   margin-left: 2rem;
   gap: 1rem;
-  height: 100lvh;
+  min-height: 100lvh;
 }
 
 .main-container > h1 {
@@ -288,4 +288,29 @@ footer > p > a {
 
 .mt-1 {
   margin-top: 1rem;
+}
+
+.post-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 1rem;
+  margin-right: 3rem;
+  place-items: center;
+  list-style: none;
+  overflow: scroll;
+}
+
+.post-list > a {
+  font-size: 1.5rem;
+  font-weight: 800;
+  min-height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom right, #91A2FF, #6CBBE8);
+  color: #ffffff;
+  border-radius: 0.5rem;
+  text-decoration: none;
 }

@@ -1,5 +1,6 @@
 <div>
   <ul class="header-menu" style="">
+    <h1>Belog</h1>
     <li><a href="/home.php">Anasayfa</a></li>
     <li><a href="/about.php">Hakkımızda</a></li>
     <li><a href="/contact.php">İletişim</a></li>

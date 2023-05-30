@@ -41,7 +41,7 @@
       gönderi var
     </p>
     <h1>Gönderiler</h1>
-    <ul>
+    <ul class="post-list">
       <?php
       // loop through the results
       while ($row = $result->fetch_assoc()) {
