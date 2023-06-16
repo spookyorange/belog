@@ -86,7 +86,15 @@ body {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+  margin-right: 2rem;
   gap: 1rem;
+}
+
+.post-creation-form input, .post-creation-form textarea {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  width: 100%;
 }
 
 .login-exclusive h1 {
@@ -313,4 +321,8 @@ footer > p > a {
   color: #ffffff;
   border-radius: 0.5rem;
   text-decoration: none;
+}
+
+.underline {
+  text-decoration: underline;
 }

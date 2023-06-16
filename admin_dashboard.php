@@ -80,6 +80,31 @@
           <input type="submit" value="Güncelle">
         </form>
       </div>
+      <div>
+        <h2>Varsayılan Belog Yorum Tasarım Ayarlarını değiştir</h2>
+        <form class="standard-form pref-update-form" action="update_comment_pref.php" method="POST">
+          <label for="default_comment_bg_c_hex">Varsayılan Yorum Arkaplan Rengi(HEX kodu olarak)
+            <input type="text" name="default_comment_bg_c_hex" id="default_comment_bg_c_hex" value="<?php echo $pref_row['default_comment_bg_c_hex']; ?>">
+          </label>
+          <label for="default_comment_fg_c_hex">Varsayılan Yorum Yazı Rengi(HEX kodu olarak)
+            <input type="text" name="default_comment_fg_c_hex" id="default_comment_fg_c_hex" value="<?php echo $pref_row['default_comment_fg_c_hex']; ?>">
+          </label>
+          <label for="default_comment_font_size_rem"> Varsayılan Yorum Yazı Boyutu (rem olarak)
+            <input type="text" name="default_comment_font_size_rem" id="default_comment_font_size_rem" value="<?php echo $pref_row['default_comment_font_size_rem']; ?>">
+          </label>
+          <label class="chbox-in-db" for="default_comment_font_italic">Varsayılan Yorum Yazı İtalik mi?
+            <input type="checkbox" name="default_comment_font_italic" id="default_comment_font_italic" <?php if ($pref_row['default_comment_font_italic']) {
+                                                                                                          echo "checked";
+                                                                                                        } ?>>
+          </label>
+          <label class="chbox-in-db" for="default_comment_font_bold">Varsayılan Yorum Yazı Kalın mı?
+            <input type="checkbox" name="default_comment_font_bold" id="default_comment_font_bold" <?php if ($pref_row['default_comment_font_bold']) {
+                                                                                                      echo "checked";
+                                                                                                    } ?>>
+          </label>
+          <input type="submit" value="Güncelle">
+        </form>
+      </div>
     </div>
   </div>
   <?php include './footer.php'; ?>

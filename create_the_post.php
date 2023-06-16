@@ -16,4 +16,4 @@ $sql = "INSERT INTO posts (title, body, user_id) VALUES ('$title', '$body', $use
 
 $result = $conn->query($sql);
 
-header('Location: ./admin_dashboard.php');
+header('Location: ./home.php');

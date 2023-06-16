@@ -25,8 +25,6 @@ if ($result->num_rows > 0) {
     header('Location: ./home.php');
 } else {
     print "No match found";
-    header('Location: ./sign_in.html');
+    header('Location: ./sign_in.php');
 }
 $conn->close();
-
-?>
